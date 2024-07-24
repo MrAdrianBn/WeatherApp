@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d94c1be2-b05b-4baf-a2a3-25698903fa49" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/WeatherApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Formatter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MainApp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Query.py" afterDir="false" />
+    <list default="true" id="d94c1be2-b05b-4baf-a2a3-25698903fa49" name="Changes" comment="connected to API, queries are returning expected results.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Formatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Formatter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainApp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MrAdrianBn"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MrAdrianBn/WeatherApp.git",
+    "accountId": "d8ebe52b-f991-494e-8dfe-5ea695395f31"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 7
 }]]></component>
@@ -41,6 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.MainApp.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
@@ -86,6 +93,19 @@
       <option name="presentableId" value="Default" />
       <updated>1721805843186</updated>
     </task>
+    <task id="LOCAL-00001" summary="connected to API, queries are returning expected results.">
+      <option name="closed" value="true" />
+      <created>1721810888474</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721810888474</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="connected to API, queries are returning expected results." />
+    <option name="LAST_COMMIT_MESSAGE" value="connected to API, queries are returning expected results." />
   </component>
 </project>

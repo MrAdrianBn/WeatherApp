@@ -1,8 +1,6 @@
 from kivy.app import App
 from kivy.uix.button import Button
-from Query import QueryCreator
-import json
-import ast
+from Formatter import Formatter
 
 
 class MainApp(App):
@@ -15,16 +13,8 @@ class MainApp(App):
         return button
 
     def on_press_button(self, instance):  # tutaj tylko metody beda wywolane a cale konwersje itd w oddzielnych klasach
-        query = QueryCreator("http://api.openweathermap.org/geo/1.0/direct?q=London&limit=2&appid"
-                             "=c614ed968bb3ba231528a9e4546a27f1")
-        json_data = query.make_query()
-        print(json_data)
-        if json_data:
-            first_result = json_data[0]
-            lon = first_result.get('lon')
-            print(f"Longitude: {lon}")
-        else:
-            print("No data found")
+        temp = Formatter("Warsaw", 2)
+        temp.show_available_cities()
 
 
 if __name__ == '__main__':
