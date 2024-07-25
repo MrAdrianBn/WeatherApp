@@ -1,6 +1,6 @@
 from kivy.app import App
 from kivy.uix.button import Button
-from Formatter import Formatter
+from CityFormatter import CityFormatter
 
 
 class MainApp(App):
@@ -13,7 +13,7 @@ class MainApp(App):
         return button
 
     def on_press_button(self, instance):  # tutaj tylko metody beda wywolane a cale konwersje itd w oddzielnych klasach
-        temp = Formatter("london", 3)
+        temp = CityFormatter("london", 3)
         temp.show_available_cities()
 
 

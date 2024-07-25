@@ -1,11 +1,14 @@
 from Query import QueryCreator
 
 
-class Formatter:
+class CityFormatter:
     def __init__(self, city_name, limit):
         self.city_name = city_name
         self.limit = limit
         self.information = [['' for _ in range(5)] for _ in range(self.limit)]
+
+    def get_information(self):
+        return self.information
 
     def show_available_cities(self):  # returns information about city specified by user
 
@@ -27,6 +30,3 @@ class Formatter:
                     self.information[i][col] = info[i][f'{key}']
                     col += 1
             col = 0
-
-        print(self.information)
-        print(info)
