@@ -23,23 +23,10 @@ class Formatter:
         col = 0
         for i in range(len(temp)):
             for key in temp[i]:
-                match key:
-                    case 'name':
-                        self.information[i][col] = info[i]['name']
-                        col += 1
-                    case 'lat':
-                        self.information[i][col] = info[i]['lat']
-                        col += 1
-                    case 'lon':
-                        self.information[i][col] = info[i]['lon']
-                        col += 1
-                    case 'country':
-                        self.information[i][col] = info[i]['country']
-                        col += 1
-                    case 'state':
-                        self.information[i][col] = info[i]['state']
-                        col += 1
+                if key != 'local_names':
+                    self.information[i][col] = info[i][f'{key}']
+                    col += 1
             col = 0
 
-        # print(self.information)
-        # print(info)
+        print(self.information)
+        print(info)
