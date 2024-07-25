@@ -13,7 +13,7 @@ class MainApp(App):
         return button
 
     def on_press_button(self, instance):  # tutaj tylko metody beda wywolane a cale konwersje itd w oddzielnych klasach
-        temp = Formatter("Warsaw", 2)
+        temp = Formatter("paris", 3)
         temp.show_available_cities()
 
 
