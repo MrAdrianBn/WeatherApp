@@ -1,7 +1,8 @@
+
 import requests
 
 
-class QueryCreator:
+class Query:
     def __init__(self, url):
         self.url = url
 
@@ -11,7 +12,7 @@ class QueryCreator:
     def get_url(self):
         return self.url
 
-    def make_query(self):  # makes GET query to specified url and returns servers respond
+    def send_query(self):  # makes GET query to specified url and returns servers respond
         try:
             response = requests.get(self.get_url())
 

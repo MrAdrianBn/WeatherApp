@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d94c1be2-b05b-4baf-a2a3-25698903fa49" name="Changes" comment="extracting information from query in Formatter" />
+    <list default="true" id="d94c1be2-b05b-4baf-a2a3-25698903fa49" name="Changes" comment="add factory method, start getting weather info">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/CityFormatter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Query.py" beforeDir="false" afterPath="$PROJECT_DIR$/Query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QueryFactory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherFormatter.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,35 +27,35 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "MrAdrianBn"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MrAdrianBn&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MrAdrianBn/WeatherApp.git",
-    "accountId": "d8ebe52b-f991-494e-8dfe-5ea695395f31"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MrAdrianBn/WeatherApp.git&quot;,
+    &quot;accountId&quot;: &quot;d8ebe52b-f991-494e-8dfe-5ea695395f31&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2jgPebaGKuCk6sKlKuaV4cCPSNo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.MainApp.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.MainApp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="MainApp" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="WeatherApp" />
@@ -105,7 +112,31 @@
       <option name="project" value="LOCAL" />
       <updated>1721814980511</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="extracting done from query">
+      <option name="closed" value="true" />
+      <created>1721903548952</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721903548952</updated>
+    </task>
+    <task id="LOCAL-00004" summary="optimization">
+      <option name="closed" value="true" />
+      <created>1721904619776</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721904619776</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add factory method, start getting weather info">
+      <option name="closed" value="true" />
+      <created>1721910986721</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721910986721</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +153,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="connected to API, queries are returning expected results." />
     <MESSAGE value="extracting information from query in Formatter" />
-    <option name="LAST_COMMIT_MESSAGE" value="extracting information from query in Formatter" />
+    <MESSAGE value="extracting done from query" />
+    <MESSAGE value="optimization" />
+    <MESSAGE value="add factory method, start getting weather info" />
+    <option name="LAST_COMMIT_MESSAGE" value="add factory method, start getting weather info" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="temp" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

@@ -12,9 +12,10 @@ class MainApp(App):
 
         return button
 
-    def on_press_button(self, instance):  # tutaj tylko metody beda wywolane a cale konwersje itd w oddzielnych klasach
-        temp = CityFormatter("london", 3)
-        temp.show_available_cities()
+    def on_press_button(self, instance):
+        city = CityFormatter("london", 3)
+        info = city.show_available_cities()
+
 
 
 if __name__ == '__main__':
