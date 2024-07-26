@@ -32,3 +32,5 @@ class CityFormatter:
             col = 0
 
         return self.get_city_information()
+
+    # remove duplicates if appeared

@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d94c1be2-b05b-4baf-a2a3-25698903fa49" name="Changes" comment="add factory method, start getting weather info">
+    <list default="true" id="d94c1be2-b05b-4baf-a2a3-25698903fa49" name="Changes" comment="getting weather information in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CityFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/CityFormatter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainApp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Query.py" beforeDir="false" afterPath="$PROJECT_DIR$/Query.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QueryFactory.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WeatherFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherFormatter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,14 +46,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.MainApp.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.MainApp.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="MainApp" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="WeatherApp" />
@@ -136,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721910986721</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="getting weather information in progress">
+      <option name="closed" value="true" />
+      <created>1721987108522</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721987108522</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,9 +162,19 @@
     <MESSAGE value="extracting done from query" />
     <MESSAGE value="optimization" />
     <MESSAGE value="add factory method, start getting weather info" />
-    <option name="LAST_COMMIT_MESSAGE" value="add factory method, start getting weather info" />
+    <MESSAGE value="getting weather information in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="getting weather information in progress" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/WeatherFormatter.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="temp" />
