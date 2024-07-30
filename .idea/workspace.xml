@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d94c1be2-b05b-4baf-a2a3-25698903fa49" name="Changes" comment="getting weather information in progress">
+    <list default="true" id="d94c1be2-b05b-4baf-a2a3-25698903fa49" name="Changes" comment="WeatherFormatter changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/CityFormatter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainApp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeatherFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherFormatter.py" afterDir="false" />
     </list>
@@ -48,7 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.MainApp.executor": "Run",
+    "Python.MainApp.executor": "Debug",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
@@ -142,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721987108522</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="WeatherFormatter changes">
+      <option name="closed" value="true" />
+      <created>1721996120720</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721996120720</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,7 +170,8 @@
     <MESSAGE value="optimization" />
     <MESSAGE value="add factory method, start getting weather info" />
     <MESSAGE value="getting weather information in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="getting weather information in progress" />
+    <MESSAGE value="WeatherFormatter changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="WeatherFormatter changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -171,7 +179,7 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/WeatherFormatter.py</url>
           <line>22</line>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
