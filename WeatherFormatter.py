@@ -6,7 +6,7 @@ from Query import Query
 class WeatherFormatter:
     # wziac koniecznie kod ikony zeby potem moc ja pobrac ze strony, dodac tez informacje raczej jako lista
     def __init__(self):
-        self.weather_information = ['' for _ in range(19)]
+        self.weather_information = ['' for _ in range(17)]
         self.unit = 'metric'  # default metric
 
     def get_weather_information(self):
@@ -37,11 +37,13 @@ class WeatherFormatter:
                     if y not in wanted_keys:
                         continue
                     else:
-                        self.weather_information[counter] = info[f'{x}'][f'{y}']
+                        # self.weather_information[counter] = f'{y}:' + str(info[f'{x}'][f'{y}'])
+                        self.weather_information[counter] = str(info[f'{x}'][f'{y}'])
                         counter += 1
             else:
                 if x in wanted_keys:
-                    self.weather_information[counter] = info[f'{x}']
+                    # self.weather_information[counter] = f'{x}:' + str(info[f'{x}'])
+                    self.weather_information[counter] = str(info[f'{x}'])
                     counter += 1
 
         return self.get_weather_information()
