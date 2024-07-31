@@ -1,8 +1,8 @@
 from kivy.app import App
 from kivy.uix.button import Button
-from CityFormatter import CityFormatter
-from TimeFormatter import TimeFormatter
-from WeatherFormatter import WeatherFormatter
+from Logic.CityFormatter import CityFormatter
+from Logic.TimeFormatter import TimeFormatter
+from Logic.WeatherFormatter import WeatherFormatter
 
 
 class MainApp(App):
