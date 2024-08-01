@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d94c1be2-b05b-4baf-a2a3-25698903fa49" name="Changes" comment="calculated local time for any city">
-      <change beforePath="$PROJECT_DIR$/CityFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/CityFormatter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/MainApp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Query.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Query.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TimeFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/TimeFormatter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/WeatherFormatter.py" afterDir="false" />
+    <list default="true" id="d94c1be2-b05b-4baf-a2a3-25698903fa49" name="Changes" comment="creation of catalog tree">
+      <change afterPath="$PROJECT_DIR$/Test/QueryTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/CityFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/CityFormatter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/MainApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/MainApp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in QueryTest.py.executor": "Run",
     "Python.MainApp.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -173,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722427570069</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="creation of catalog tree">
+      <option name="closed" value="true" />
+      <created>1722428333505</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722428333505</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,7 +205,8 @@
     <MESSAGE value="WeatherFormatter changes" />
     <MESSAGE value="weather information  successfully extracted" />
     <MESSAGE value="calculated local time for any city" />
-    <option name="LAST_COMMIT_MESSAGE" value="calculated local time for any city" />
+    <MESSAGE value="creation of catalog tree" />
+    <option name="LAST_COMMIT_MESSAGE" value="creation of catalog tree" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

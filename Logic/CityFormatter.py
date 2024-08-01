@@ -1,5 +1,5 @@
 
-from Query import Query
+from Logic.Query import Query
 
 
 class CityFormatter:

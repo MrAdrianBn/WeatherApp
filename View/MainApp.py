@@ -15,7 +15,7 @@ class MainApp(App):
         return button
 
     def on_press_button(self, instance):
-        city = CityFormatter("denver", 3)
+        city = CityFormatter("paryz", 3)
         info = city.show_available_cities()
         weather = WeatherFormatter()
         print(weather.extract_weather_information(info[0][1], info[0][2]))
