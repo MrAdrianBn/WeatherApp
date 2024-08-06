@@ -15,10 +15,12 @@ class MainApp(App):
         return button
 
     def on_press_button(self, instance):
-        city = CityFormatter("paryz", 3)
-        info = city.show_available_cities()
+        city = CityFormatter("krakow", 10)  # user chooses city
+        info = city.show_available_cities()  # available cities show up to him and from the list he chooses the one
+        print(city.get_city_information())
         weather = WeatherFormatter()
-        print(weather.extract_weather_information(info[0][1], info[0][2]))
+        print(weather.extract_weather_information(info[0][1], info[0][2]))  # lon and lat is forwarded to weather info
+        # what shows him local time, temp, etc.
         timer = TimeFormatter()
         timer.set_local_time(weather.get_weather_information()[len(weather.weather_information) - 1])
         print(timer.get_local_time())
