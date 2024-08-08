@@ -1,8 +1,8 @@
-
 from Logic.Query import Query
+from Logic.QueryCreator import QueryCreator
 
 
-class CityFormatter:
+class CityFormatter(QueryCreator):
     def __init__(self, city_name, limit):
         self.city_name = city_name
         self.limit = limit
@@ -11,11 +11,19 @@ class CityFormatter:
     def get_city_information(self):
         return self.city_information
 
-    def show_available_cities(self):  # returns information about city specified by user
-
+    def get_respond(self):
         query = Query(f'http://api.openweathermap.org/geo/1.0/direct?q={self.city_name}&limit={self.limit}&appid'
                       '=c614ed968bb3ba231528a9e4546a27f1')
-        info = query.send_query()
+        return query.send_query()
+
+    def pop_empty(self, info):
+        # pop empty elements from list
+        if len(info) < self.limit:
+            for i in range(self.limit - 1, len(info) - 1, -1):
+                self.city_information.pop(i)
+
+    def show_available_cities(self):  # returns information about city specified by user
+        info = self.get_respond()
 
         temp = [None for _ in range(len(info))]
         counter = 0
@@ -31,11 +39,7 @@ class CityFormatter:
                     col += 1
             col = 0
 
-        # pop empty elements from list
-        if len(info) < self.limit:
-            for i in range(self.limit - 1, len(info) - 1, -1):
-                self.city_information.pop(i)
-
+        self.pop_empty(info)
         self.remove_duplicates()
 
         return self.get_city_information()
@@ -44,12 +48,12 @@ class CityFormatter:
         temp_lat = ''
         temp_lon = ''
         for i in range(len(self.city_information) - 1):
-            if temp_lat == self.city_information[i][1] and temp_lon == self.city_information[i][2]:
-                self.city_information.pop(i)
+            j = i
+            while j < len(self.city_information):
+                if temp_lat == self.city_information[j][1] and temp_lon == self.city_information[j][2]:
+                    self.city_information.pop(j)
+                else:
+                    j += 1
             else:
-                for j in range(1, 3):
-                    if j == 1:
-                        temp_lat = self.city_information[i][j]
-                    else:
-                        temp_lon = self.city_information[i][j]
-
+                temp_lat = self.city_information[i][1]
+                temp_lon = self.city_information[i][2]

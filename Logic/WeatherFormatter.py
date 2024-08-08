@@ -1,12 +1,14 @@
 import json
 
 from Logic.Query import Query
+from Logic.QueryCreator import QueryCreator
 
 
-class WeatherFormatter:
+class WeatherFormatter(QueryCreator):
     # wziac koniecznie kod ikony zeby potem moc ja pobrac ze strony, dodac tez informacje raczej jako lista
     def __init__(self):
-        self.weather_information = ['' for _ in range(17)]
+        self.amount_of_info = 17
+        self.weather_information = ['' for _ in range(self.amount_of_info)]
         self.unit = 'metric'  # default metric
 
     def get_weather_information(self):
@@ -18,9 +20,13 @@ class WeatherFormatter:
     def get_unit(self):
         return self.unit
 
-    def extract_weather_information(self, lat, lon):
+    def get_respond(self,lat ,lon):
         query = Query(f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}'
                       f'&appid=c614ed968bb3ba231528a9e4546a27f1&units={self.unit}')
+        # parameters problem
+
+    def extract_weather_information(self, lat, lon):
+
 
         info = query.send_query()  # dict
         temp = str(info).replace("'", '"')
