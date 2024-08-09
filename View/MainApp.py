@@ -15,7 +15,7 @@ class MainApp(App):
         return button
 
     def on_press_button(self, instance):
-        city = CityFormatter("lodz", 2)  # user chooses city
+        city = CityFormatter("rome", 8)  # user chooses city
         info = city.show_available_cities()  # available cities show up to him and from the list he chooses the one
         print(info)
         weather = WeatherFormatter(city)

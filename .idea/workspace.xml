@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d94c1be2-b05b-4baf-a2a3-25698903fa49" name="Changes" comment="abstract class created, duplicates removed from information field">
+    <list default="true" id="d94c1be2-b05b-4baf-a2a3-25698903fa49" name="Changes" comment="coordinates changes, preparing to gui implementation.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logic/CityFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/CityFormatter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/WeatherFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/WeatherFormatter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/CityTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/CityTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/MainApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/MainApp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +48,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in CityTest.py.executor": "Debug",
     "Python tests.Python tests in QueryTest.py.executor": "Run",
+    "Python.CityFormatter.executor": "Debug",
     "Python.MainApp.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -205,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723121142634</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="coordinates changes, preparing to gui implementation.">
+      <option name="closed" value="true" />
+      <created>1723192321735</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1723192321735</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,9 +243,19 @@
     <MESSAGE value="testing" />
     <MESSAGE value="unit tests, removing duplicated rows of city information." />
     <MESSAGE value="abstract class created, duplicates removed from information field" />
-    <option name="LAST_COMMIT_MESSAGE" value="abstract class created, duplicates removed from information field" />
+    <MESSAGE value="coordinates changes, preparing to gui implementation." />
+    <option name="LAST_COMMIT_MESSAGE" value="coordinates changes, preparing to gui implementation." />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Logic/WeatherFormatter.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="temp" />

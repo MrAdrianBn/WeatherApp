@@ -58,7 +58,7 @@ class CityFormatter(QueryCreator):
         self.pop_empty(info)
         self.remove_duplicates()
         self.rewrite_cords()
-        self.set_chosen_cords(1)
+        self.set_chosen_cords(0)
 
         return self.get_city_information()
 
