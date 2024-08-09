@@ -6,7 +6,11 @@ class CityFormatter(QueryCreator):
     def __init__(self, city_name, limit):
         self.city_name = city_name
         self.limit = limit
-        self.city_information = [['' for _ in range(5)] for _ in range(self.limit)]
+        self.amount_of_info = 5
+        self.city_information = [['' for _ in range(self.amount_of_info)] for _ in range(self.limit)]
+        self.lat = []
+        self.lon = []
+        self.chosen_cords = [None for _ in range(2)]  # 2 cords (lat, lon)
 
     def get_city_information(self):
         return self.city_information
@@ -21,6 +25,18 @@ class CityFormatter(QueryCreator):
         if len(info) < self.limit:
             for i in range(self.limit - 1, len(info) - 1, -1):
                 self.city_information.pop(i)
+
+    def rewrite_cords(self):
+        for i in range(len(self.city_information)):
+            self.lat.append(self.city_information[i][1])
+            self.lon.append(self.city_information[i][2])
+
+    def set_chosen_cords(self, index):
+        self.chosen_cords[0] = self.lat[index]
+        self.chosen_cords[1] = self.lon[index]
+
+    def get_chosen_cords(self):
+        return self.chosen_cords
 
     def show_available_cities(self):  # returns information about city specified by user
         info = self.get_respond()
@@ -41,6 +57,8 @@ class CityFormatter(QueryCreator):
 
         self.pop_empty(info)
         self.remove_duplicates()
+        self.rewrite_cords()
+        self.set_chosen_cords(1)
 
         return self.get_city_information()
 
